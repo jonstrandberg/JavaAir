@@ -53,7 +53,7 @@ public class FlightManagerTest {
         calendar.set(2007, 5, 23, 12, 0, 0);
         flightDate = calendar.getTime();
         plane = new Plane(PlaneModel.FAIRCHILDC_123);
-        weight = new Weight(80, "kg"); // Initialize the weight object before flightManager
+        weight = new Weight(80, "kg");
         flight1 = new Flight(pilot, "ConAir234", "Carson City, Nevada", plane, "Mobile, Alabama",flightDate, 20, crewMembers);
         flight1.setPassengers(passengers);
         flightManager = new FlightManager(flight1, weight);
